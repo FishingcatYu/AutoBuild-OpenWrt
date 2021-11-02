@@ -96,7 +96,7 @@ jobs:
         svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go trojan-go
         svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus trojan-plus
  
- - name: Update & Install feeds
+    - name: Update & Install feeds
       working-directory: ./openwrt
       run: |
         ./scripts/feeds update -a
