@@ -10,7 +10,7 @@ name: Build_x86_64
 on: 
   workflow_dispatch:
   #release:
-    #types: [published]
+  #  types: [published]
 
   #push:
   #  branches: 
@@ -70,20 +70,20 @@ jobs:
         echo "src-link custom /home/runner/work/AutoBuild-OpenWrt/AutoBuild-OpenWrt/customfeeds" >> ./feeds.conf.default
         
     - name: Import external feeds - custom
-      #working-directory: ./openwrt
+    # working-directory: ./openwrt
       working-directory: ./customfeeds
       run: |
-        #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adguardhome
-        #git clone https://github.com/esirplayground/luci-app-poweroff.git package/poweroff
-        #git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/opentomcat
-        #git clone https://github.com/kuoruan/openwrt-upx.git package/upx
-        #git clone https://github.com/pymumu/luci-app-smartdns.git package/smartdns
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadnsng
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria package/hysteria
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/trojan-go
-        #svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/trojan-plus
+    #   git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/adguardhome
+    #   git clone https://github.com/esirplayground/luci-app-poweroff.git package/poweroff
+    #   git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/opentomcat
+    #   git clone https://github.com/kuoruan/openwrt-upx.git package/upx
+    #   git clone https://github.com/pymumu/luci-app-smartdns.git package/smartdns
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadnsng
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria package/hysteria
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/trojan-go
+    #   svn checkout https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/trojan-plus
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git adguardhome
         git clone https://github.com/esirplayground/luci-app-poweroff.git poweroff
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git opentomcat
