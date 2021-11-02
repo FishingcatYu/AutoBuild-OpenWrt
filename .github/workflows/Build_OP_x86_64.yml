@@ -70,7 +70,6 @@ jobs:
         echo "src-link custom /home/runner/work/AutoBuild-OpenWrt/AutoBuild-OpenWrt/customfeeds" >> ./feeds.conf.default
         
     - name: Import external feeds - custom
-    # working-directory: ./openwrt
       working-directory: ./customfeeds
       run: |
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git adguardhome
